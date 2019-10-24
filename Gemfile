@@ -42,3 +42,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "httparty", "~> 0.17.1"
 gem "fast_jsonapi", "~> 1.5"
+
+gem "rack-cors", "~> 1.0"
