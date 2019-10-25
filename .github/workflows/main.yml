@@ -9,4 +9,6 @@ jobs:
 
     steps:
     - name: Standard Rb Fix
+      args:
+        - autofix
       uses: "laginha87/standardrb-action@master"
