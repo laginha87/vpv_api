@@ -1,6 +1,6 @@
 name: CI
 
-on: [pull_request_review]
+on: [push]
 
 jobs:
   build:
@@ -9,4 +9,8 @@ jobs:
 
     steps:
     - name: Standard Rb Fix
+      with:
+        args: autofix
       uses: "laginha87/standardrb-action@master"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
