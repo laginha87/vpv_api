@@ -12,3 +12,5 @@ jobs:
       with:
         args: autofix
       uses: "laginha87/standardrb-action@master"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
