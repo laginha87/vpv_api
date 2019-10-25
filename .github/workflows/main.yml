@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: "laginha87/standardrb-action@master"
+    - name: Standard Rb Fix
+      uses: "laginha87/standardrb-action@master"
