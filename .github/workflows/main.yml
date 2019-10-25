@@ -9,4 +9,4 @@ jobs:
 
     steps:
     - name: Standard Rb Fix
-    - uses: "laginha87/standardrb-action@master"
+      uses: "laginha87/standardrb-action@master"
