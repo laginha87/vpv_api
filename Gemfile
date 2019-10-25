@@ -29,6 +29,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "standard"
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -45,3 +46,6 @@ gem "httparty", "~> 0.17.1"
 gem "fast_jsonapi", "~> 1.5"
 
 gem "rack-cors", "~> 1.0"
+
+gem "redis", "~> 4.1"
+gem "hiredis", "~> 0.6.3"
