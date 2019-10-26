@@ -4,6 +4,13 @@ rvm:
 
 install:
   - bundle install
+env:
+  - DB_HOST=localhost
+before_script:
+  - rails db:create db:schema:load
+
 script:
   - rails standard
   - rails test
+services:
+  - postgresql
