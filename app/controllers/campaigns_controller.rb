@@ -1,5 +1,6 @@
 class CampaignsController < ApplicationController
     def index
-      render json: CampaignSerializer.new(Campaign.includes(:corporation, :campaign_supplies, :supplies).all)
+      includes = %i[corporation campaign_supplies supplies]
+      render json: CampaignSerializer.new(Campaign.includes(*includes).all, include: includes.map(&:to_s))
     end
   end

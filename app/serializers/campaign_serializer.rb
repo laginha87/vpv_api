@@ -1,5 +1,7 @@
 class CampaignSerializer
     include FastJsonapi::ObjectSerializer
+    set_key_transform :camel_lower
+
     attributes :end_datetime, :completion
 
     belongs_to :corporation
