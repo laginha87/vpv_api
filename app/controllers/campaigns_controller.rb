@@ -1,6 +1,7 @@
 class CampaignsController < ApplicationController
   def index
-    render json: CampaignSerializer.new(Campaign.includes(:corporation, :campaign_supplies, :supplies).all)
+    included = params[:include].split(",").map(&:underscore)
+    render json: CampaignSerializer.new(Campaign.includes(*included.map(&:to_sym)).all, include: included)
   end
 
   def show
