@@ -5,6 +5,7 @@ class CampaignsController < ApplicationController
   end
 
   def show
-    render json: CampaignSerializer.new(Campaign.find(params[:id]))
+    included = params[:include].split(",").map(&:underscore)
+    render json: CampaignSerializer.new(Campaign.includes(*included.map(&:to_sym)).find(params[:id]), include: included)
   end
 end
