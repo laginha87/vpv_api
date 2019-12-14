@@ -49,3 +49,7 @@ gem "rack-cors", "~> 1.0"
 
 gem "redis", "~> 4.1"
 gem "hiredis", "~> 0.6.3"
+
+gem "graphql", "~> 1.9"
+
+gem "graphiql-rails", "~> 1.7", :group => :development
