@@ -4,7 +4,8 @@ module Mutations
         argument :campaign_id, ID, required: true
         argument :contribution_supplies, [Types::CampaignContributionSupplyInputType], required: true
 
-        type Types::CampaignType
+        field :campaign, Types::CampaignType, null: false
+
 
         def resolve(
             user_id:,
@@ -25,7 +26,9 @@ module Mutations
                     campaign_supply.save!
                 end
             end
-            Campaign.find(campaign_id)
+            campaign = Campaign.find(campaign_id)
+
+            { campaign: campaign }
         end
     end
 

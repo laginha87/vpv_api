@@ -41,3 +41,6 @@ corporations.each do |c|
     }
   )
 end
+
+
+User.create(name: 'Filipe')
