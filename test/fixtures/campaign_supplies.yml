@@ -1,13 +1,22 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  supply: one
-  campaign: one
-  quantity_needed: 1
+  id: 1
+  supply_id: 1
+  campaign_id: 1
+  quantity_needed: 40
   quantity_supplied: 1
 
 two:
-  supply: two
-  campaign: two
-  quantity_needed: 1
+  id: 2
+  supply_id: 2
+  campaign_id: 1
+  quantity_needed: 20
+  quantity_supplied: 1
+
+three:
+  id: 3
+  supply_id: 2
+  campaign_id: 2
+  quantity_needed: 20
   quantity_supplied: 1

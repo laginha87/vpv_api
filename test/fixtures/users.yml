@@ -3,11 +3,7 @@
 one:
   id: 1
   name: MyString
-  description: MyText
-  icon: MyString
 
 two:
   id: 2
   name: MyString
-  description: MyText
-  icon: MyString

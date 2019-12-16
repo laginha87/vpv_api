@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  campaign_supply_id: 1
+  campaign_contribution_id: 2
+  quantity: 1
+
+two:
+  campaign_supply_id: 2
+  campaign_contribution_id: 2
+  quantity: 1
