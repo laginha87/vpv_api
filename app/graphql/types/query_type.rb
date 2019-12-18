@@ -15,6 +15,11 @@ module Types
       argument :id, ID, required: true
     end
 
+    field :campaign_contribution, Types::CampaignContributionType, null: false,
+      description: "An example field added by the generator" do
+      argument :id, ID, required: true
+    end
+
     def fires
       Fire.all
     end
@@ -25,6 +30,10 @@ module Types
 
     def campaign(id:)
       Campaign.preload(:corporation, :campaign_supplies).find(id)
+    end
+
+    def campaign_contribution(id:)
+      CampaignContribution.preload(:user, :campaign, campaign: [:corporation], campaign_contribution_supplies: [campaign_supply: [:supply]]).find(id)
     end
   end
 end

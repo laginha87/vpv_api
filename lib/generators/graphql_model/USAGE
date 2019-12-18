@@ -1,0 +1,8 @@
+Description:
+    Explain the generator
+
+Example:
+    rails generate graphql_model ModelName
+
+    This will create:
+        app/graphql/types/model_name_type.rb
