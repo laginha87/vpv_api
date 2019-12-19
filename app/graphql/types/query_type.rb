@@ -5,18 +5,18 @@ module Types
 
     # TODO: remove me
     field :fires, [Types::FireType], null: false,
-      description: "An example field added by the generator"
+                                     description: "An example field added by the generator"
 
     field :campaigns, [Types::CampaignType], null: false,
-      description: "An example field added by the generator"
+                                             description: "An example field added by the generator"
 
     field :campaign, Types::CampaignType, null: false,
-      description: "An example field added by the generator" do
+                                          description: "An example field added by the generator" do
       argument :id, ID, required: true
     end
 
     field :campaign_contribution, Types::CampaignContributionType, null: false,
-      description: "An example field added by the generator" do
+                                                                   description: "An example field added by the generator" do
       argument :id, ID, required: true
     end
 

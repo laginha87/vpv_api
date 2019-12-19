@@ -42,5 +42,4 @@ corporations.each do |c|
   )
 end
 
-
-User.create(name: 'Filipe')
+User.create(name: "Filipe")

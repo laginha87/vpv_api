@@ -52,4 +52,4 @@ gem "hiredis", "~> 0.6.3"
 
 gem "graphql", "~> 1.9"
 
-gem "graphiql-rails", "~> 1.7", :group => :development
+gem "graphiql-rails", "~> 1.7", group: :development
