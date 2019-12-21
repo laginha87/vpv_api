@@ -1,8 +1,8 @@
 module Types
   class SupplyType < Types::BaseObject
-    field :id, ID, null: true
-    field :name, String, null: true
-    field :description, String, null: true
-    field :icon, String, null: true
+    field :id, ID, null: false
+    field :name, String, null: false
+    field :description, String, null: false
+    field :icon, String, null: false
   end
 end
