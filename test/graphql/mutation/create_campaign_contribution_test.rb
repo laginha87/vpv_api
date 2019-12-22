@@ -18,6 +18,7 @@ class Mutations::CreateCampaignContributionTest < ActiveSupport::TestCase
     campaign = res[:campaign_contribution].campaign
 
     assert campaign.id == 1
-    assert_equal [11, 21], campaign.campaign_supplies.map { |e| e.quantity_supplied }.sort
+    assert_equal [10, 20], campaign.campaign_supplies.map { |e| e.quantity_supplied }.sort
+    assert_equal 50, campaign.completion
   end
 end

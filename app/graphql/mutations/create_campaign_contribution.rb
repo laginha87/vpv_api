@@ -27,6 +27,7 @@ module Mutations
           campaign_supply.quantity_supplied += cs[:quantity]
           campaign_supply.save!
         end
+        campaign_contribution.campaign.set_completion!
       end
 
       {campaign_contribution: campaign_contribution}

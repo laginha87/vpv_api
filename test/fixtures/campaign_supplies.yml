@@ -5,14 +5,14 @@ one:
   supply_id: 1
   campaign_id: 1
   quantity_needed: 40
-  quantity_supplied: 1
+  quantity_supplied: 0
 
 two:
   id: 2
   supply_id: 2
   campaign_id: 1
   quantity_needed: 20
-  quantity_supplied: 1
+  quantity_supplied: 0
 
 three:
   id: 3

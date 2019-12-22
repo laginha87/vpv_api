@@ -3,11 +3,11 @@
 one:
   id: 1
   end_datetime: 2019-12-01 12:07:15
-  completion: 9.99
+  completion: 0
   corporation_id: 1
 
 two:
   id: 2
   end_datetime: 2019-12-01 12:07:15
-  completion: 9.99
+  completion: 0
   corporation_id: 2
