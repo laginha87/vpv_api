@@ -6,7 +6,7 @@ class Mutations::CreateCampaignContributionTest < ActiveSupport::TestCase
   end
 
   test "adds supplies to a campaign" do
-    campaign = perform(
+    res = perform(
       user_id: 1,
       campaign_id: 1,
       contribution_supplies: [
@@ -14,6 +14,8 @@ class Mutations::CreateCampaignContributionTest < ActiveSupport::TestCase
         {quantity: 10, campaign_supply_id: 1},
       ],
     )
+
+    campaign = res[:campaign_contribution].campaign
 
     assert campaign.id == 1
     assert_equal [11, 21], campaign.campaign_supplies.map { |e| e.quantity_supplied }.sort
