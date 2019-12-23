@@ -11,6 +11,7 @@ module Mutations
       campaign_id:,
       contribution_supplies:
     )
+      contribution_supplies = contribution_supplies.filter{ |e| e[:quantity] > 0 }
 
       campaign_contribution = CampaignContribution.new(
         user_id: user_id,
